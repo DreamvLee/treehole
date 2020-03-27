@@ -63,6 +63,7 @@ wx.login({
         }
       }
     })
+ ```
 全部树洞的获取，服务器端需要按时间倒序获取所以的记录。值得注意的是“=“号不可以触发页面更新，必须要用setdata。
 ```
 onLoad: function (options) {
@@ -88,14 +89,17 @@ onLoad: function (options) {
     
 
   }
-  ```
+```
+
 在前端只需要将列表进行渲染即可。当对树洞进行点赞的操作时，需要获取点击树洞的id，可以通过绑定data-id或者id属性即可。点赞图标的变化采用三目运算绑定数据巧妙的进行切换。
+
 ```
 <block wx:for="{{列表}}" wx:for-index="idx" wx:for-item="itemName">
 <image class="like" src='{{itemName.islike==1? "../../images/likeplus.png ":"../../images/like.png"}}' bindtap="upIdea" id="{{itemName._id}}" data-id="{{itemName._id}}"></image>
 </block?>
+```
 当点赞过后，数据库中的记录需要更新。该处使用command.inc自增操作。
-
+```
 //服务器通信
           const testDB = wx.cloud.database()
           const _ = testDB.command
