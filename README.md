@@ -119,7 +119,8 @@ onLoad: function (options) {
 
 # 微信开发者工具
 ！创建选择带云开发的设置
-
+# 未完成功能
+1. 点赞的设置，页面跳转可优化（2020.03.27）
 # 参考教程
 https://developers.weixin.qq.com/miniprogram/dev/framework/
 https://blog.csdn.net/u011280778/article/details/92840364
