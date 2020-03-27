@@ -13,8 +13,31 @@ https://next.xuetangx.com/learn/THU0809102418/THU0809102418/2300843/video/164683
 2. 广场接受全部树洞接口
 3. 个人主页接口
 
+# 重点代码
+
+云函数获取openid，openid唯一标识的属性在数据库中充当主键的作用。每个微信用户都有一个唯一的openid。在微信小程序中，不需要通过wx.login等API获取openid。
+‘’‘
+// 云函数入口文件
+const cloud = require('wx-server-sdk')
+
+cloud.init()
+
+// 云函数入口函数
+exports.main = async (event, context) => {
+  const wxContext = cloud.getWXContext()
+
+  return {
+    event,
+    openId: wxContext.OPENID,
+    appid: wxContext.APPID,
+    unionid: wxContext.UNIONID,
+  }
+}
+’‘’
+
+
 # 微信开发者工具
-1.创建选择带云开发的设置
+创建选择带云开发的设置
 
 
 
