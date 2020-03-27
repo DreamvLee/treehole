@@ -1,0 +1,13 @@
+<!--pages/enroll/enroll.wxml-->
+<view class="first">
+  <input placeholder="手机号" placeholder-class="plas" class="inputs" type="text" bindinput="phonenumberInput"></input>
+</view>
+<view class="second">
+  <input placeholder="密码" placeholder-class="plas" class="inputs" type="password" bindinput="passwordInput"></input>
+</view>
+<view id = "btn" class= "register" bindtap="login">
+  <text >login</text>
+</view>
+<view class= "cha" bindtap="signin">
+  <text class = "no">无账号，点我注册</text>
+</view>

@@ -1,0 +1,8 @@
+
+<!-- 需要使用 button 来授权登录 -->
+<view wx:if="{{canIUse}}" class="mai">
+<button class="btn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view class="jiange">-------.-------</view>
+<text class="txt">大家按时完成考勤,以后相关通知也会发在小程序上</text>
+</view>
+<view wx:else>请升级微信版本</view>

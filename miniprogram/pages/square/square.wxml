@@ -1,0 +1,32 @@
+<!--pages/square/square.wxml-->
+<scroll-view scroll-y="true" class="scbg" bindscroll="scroll" >
+<block wx:for="{{list}}" wx:for-index="idx" wx:for-item="itemName">
+
+          <view id="demo1" class="box ">
+          <view id="demo2"  class="firstblock ">
+            <image src='{{itemName.face_url}}' class="touxiang"></image>
+            <view class="person">
+              <view class="name">
+                <text class="showname">{{itemName.username}}</text>
+              </view>
+              <view class="tel">
+                <text class="showtime">{{itemName.send_time}}</text>
+              </view>
+            </view>
+          </view>
+          <view id="demo3" class="secondblock">
+            <text class="content">{{itemName.content}}</text>
+          </view>
+          <view id="demo3" class="thirdblock">
+            <image class="like" src='{{itemName.islike==1? "../../images/likeplus.png ":"../../images/like.png"}}' bindtap="upIdea" id="{{itemName._id}}" data-id="{{itemName._id}}"></image>
+            <text class="num">{{itemName.total_likes}}</text>
+          </view>
+          </view>
+
+</block>
+
+       </scroll-view>
+
+
+<include src= "../bottom/bottom">
+</include>

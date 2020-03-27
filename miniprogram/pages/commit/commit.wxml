@@ -1,0 +1,8 @@
+<!--pages/commit/commit.wxml-->
+<view class="textarea">
+  <textarea class="textinput" placeholder="please send a message" placeholder-style="color :#f8888R8;font-size:38rpx" maxlength="-1" bindinput="bindTextAreaInput"></textarea>
+</view>
+<view id="btn" class="click" bindtap="send">
+send
+
+</view>

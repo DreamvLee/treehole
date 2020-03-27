@@ -1,0 +1,78 @@
+/* pages/login/login.wxss */
+
+page{
+left: 0rpx;
+right: 0rpx;
+background-color: white;
+
+}
+.first{
+  width: 90%;
+  height: 100rpx;
+  margin-top: 80rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+}
+.second{
+  width: 90%;
+  height: 100rpx;
+  margin-top: 20rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+}
+.plas{
+
+  color: #cccccc;
+  font-size: 30rpx;
+}
+
+.inputs{
+  width: 100%;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: black;
+  margin-left: 15rpx;
+
+  
+}
+
+.register{
+  width: 90%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: auto;
+  margin-top: 80rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: #f76968;
+  text-align: center;
+  font-size: 40rpx;
+  color: white;
+}
+
+.cha{
+  width: 90%;
+  height: 50rpx;
+  margin: auto;
+  margin-top: 30rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+}
+.no{
+  color: black;
+  font-size: 28rpx;
+  margin-left: 15rpx;
+  
+
+}
